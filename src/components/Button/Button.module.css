@@ -1,0 +1,49 @@
+@import "../../styles/mixins.css";
+@import "../../styles/breakpoints.css";
+
+.button {
+  display: flex;
+  align-items: center;
+  height: 4.4rem;
+  padding: 0 2.4rem;
+  border: 2px solid;
+  border-radius: 4.4rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  outline: none;
+  cursor: pointer;
+
+  &[data-style="white"] {
+    background: white;
+    border-color: white;
+    color: black;
+
+    &:focus-visible {
+      border-color: navy;
+    }
+
+    &:hover {
+      background: ivory;
+      border-color: ivory;
+    }
+  }
+
+  &[data-style="black"] {
+    background: black;
+    border-color: black;
+    color: white;
+
+    &:focus-visible {
+      border-color: navy;
+    }
+
+    &:hover {
+      background: #222;
+      border-color: #222;
+    }
+  }
+}
