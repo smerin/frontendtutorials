@@ -39,3 +39,13 @@
   font-weight: 400;
   line-height: 1;
 }
+
+@define-mixin smallCaps {
+  font-family: var(--font-family-heading);
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+}
