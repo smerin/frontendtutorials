@@ -12,6 +12,15 @@
 
   --font-size-body: 1.6rem;
   --line-height-body: 1.5;
+
+  --white: #ffffff;
+  --charcoal: #373f51;
+  --grey: #b8b3be;
+  --pacific: #38aecc;
+  --turquoise: #28afb0;
+  --cerise: #e63462;
+  --apple: #9ee37d;
+  --yellow: #ffc914;
 }
 
 *,
@@ -29,7 +38,7 @@ html {
 }
 
 body {
-  background: #008080;
+  background: var(--charcoal);
   color: #fff;
   font-family: var(--font-family-default);
   font-size: var(--font-size-body);

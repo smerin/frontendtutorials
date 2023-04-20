@@ -14,32 +14,47 @@
   cursor: pointer;
 
   &[data-style="white"] {
-    background: white;
-    border-color: white;
-    color: black;
+    background: var(--white);
+    border-color: var(--white);
+    color: var(--charcoal);
 
     &:focus-visible {
-      border-color: navy;
+      border-color: var(--charcoal);
     }
 
     &:hover {
-      background: ivory;
-      border-color: ivory;
+      background: var(--turquoise);
+      border-color: var(--turquoise);
     }
   }
 
-  &[data-style="black"] {
-    background: black;
-    border-color: black;
-    color: white;
+  &[data-style="charcoal"] {
+    background: var(--charcoal);
+    border-color: var(--charcoal);
+    color: var(--white);
 
     &:focus-visible {
-      border-color: navy;
+      border-color: var(--white);
     }
 
     &:hover {
-      background: #222;
-      border-color: #222;
+      background: var(--turquoise);
+      border-color: var(--turquoise);
+    }
+  }
+
+  &[data-style="turquoise"] {
+    background: var(--turquoise);
+    border-color: var(--turquoise);
+    color: var(--charcoal);
+
+    &:focus-visible {
+      border-color: var(--white);
+    }
+
+    &:hover {
+      background: var(--white);
+      border-color: var(--white);
     }
   }
 }

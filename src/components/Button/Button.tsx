@@ -9,7 +9,8 @@ interface ButtonProps {
 
 export enum ButtonStyles {
   WHITE = "white",
-  BLACK = "black",
+  CHARCOAL = "charcoal",
+  TURQUOISE = "turquoise",
 }
 
 const Button = ({
