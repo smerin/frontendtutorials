@@ -2,28 +2,42 @@
 @import "../../styles/breakpoints.css";
 
 .header {
-  width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  gap: 2rem;
+  width: 100%;
   padding: 2rem;
+  border-bottom: 1px solid var(--slate);
+
+  @media (--medium) {
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }
 
 .logo {
   @mixin smallCaps;
+  text-align: center;
 }
 
 .nav {
   ul {
     display: flex;
-    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
     margin: 0;
     padding: 0;
     list-style: none;
+
+    @media (--medium) {
+      gap: 2rem;
+    }
   }
   a {
     @mixin smallCaps;
-    padding: 1rem;
+    padding: 0.5rem;
     text-decoration: none;
     transition: all 0.3s ease;
 
