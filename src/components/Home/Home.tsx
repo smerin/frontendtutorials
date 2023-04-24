@@ -1,12 +1,12 @@
 import Button, { ButtonStyles } from "../Button/Button";
 import Header from "@src/components/Header/Header";
-import styles from "./HomePage.module.css";
+import styles from "./Home.module.css";
 
-const HomePage = (): JSX.Element => {
+const Home = (): JSX.Element => {
   return (
     <>
       <Header />
-      <div className={styles.homePage}>
+      <div className={styles.home}>
         <h1 className={styles.title}>
           Welcome to <span>Frontend</span> Tutorials
         </h1>
@@ -19,4 +19,4 @@ const HomePage = (): JSX.Element => {
   );
 };
 
-export default HomePage;
+export default Home;

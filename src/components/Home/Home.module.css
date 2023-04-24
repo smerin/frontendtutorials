@@ -1,7 +1,7 @@
 @import "../../styles/mixins.css";
 @import "../../styles/breakpoints.css";
 
-.homePage {
+.home {
   width: 100%;
   height: calc(100vh - 10rem);
   display: flex;

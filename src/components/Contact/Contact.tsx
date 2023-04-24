@@ -1,13 +1,13 @@
-import Button, { ButtonStyles } from "../Button/Button";
-import Header from "@src/components/Header/Header";
-import styles from "./ContactPage.module.css";
 import Link from "next/link";
+import Header from "@src/components/Header/Header";
+import Button, { ButtonStyles } from "@src/components/Button/Button";
+import styles from "./Contact.module.css";
 
-const ContactPage = (): JSX.Element => {
+const Contact = (): JSX.Element => {
   return (
     <>
       <Header />
-      <div className={styles.contactPage}>
+      <div className={styles.contact}>
         <h1 className={styles.title}>Contact George</h1>
         <p className={styles.message}>
           Get in touch with any feedback on the tutorials, or if you would like
@@ -31,4 +31,4 @@ const ContactPage = (): JSX.Element => {
   );
 };
 
-export default ContactPage;
+export default Contact;
