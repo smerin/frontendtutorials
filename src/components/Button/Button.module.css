@@ -13,6 +13,11 @@
   outline: none;
   cursor: pointer;
 
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
   &[data-style="white"] {
     background: var(--white);
     border-color: var(--white);

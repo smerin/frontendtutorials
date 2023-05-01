@@ -2,7 +2,8 @@ import { ReactNode } from "react";
 import styles from "./Button.module.css";
 
 interface ButtonProps {
-  buttonStyle: ButtonStyles;
+  buttonStyle?: ButtonStyles;
+  disabled?: boolean;
   children: ReactNode;
   handleClick: () => void;
 }
@@ -15,14 +16,16 @@ export enum ButtonStyles {
 
 const Button = ({
   buttonStyle = ButtonStyles.WHITE,
+  disabled,
   children,
   handleClick,
 }: ButtonProps): JSX.Element => {
   return (
     <button
-      onClick={handleClick}
       className={styles.button}
       data-style={buttonStyle}
+      disabled={disabled}
+      onClick={handleClick}
     >
       {children}
     </button>
