@@ -10,7 +10,7 @@
   --font-family-heading: "Big Shoulders Display";
   --font-family-alt: "Big Shoulders Text";
 
-  --font-size-body: 1.6rem;
+  --font-size-body: 2.4rem;
   --line-height-body: 1.5;
 
   --white: #ffffff;
@@ -44,7 +44,7 @@ body {
   font-family: var(--font-family-default);
   font-size: var(--font-size-body);
   line-height: var(--line-height-body);
-  /* -webkit-font-smoothing: antialiased; */
+  -webkit-font-smoothing: antialiased;
 }
 
 img,
@@ -77,9 +77,16 @@ h6 {
 a {
   color: inherit;
   text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: var(--turquoise);
+  }
 }
 
-p {
+p,
+ul,
+ol {
   margin-bottom: 2rem;
 }
 

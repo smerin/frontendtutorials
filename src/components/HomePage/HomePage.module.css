@@ -1,0 +1,14 @@
+@import "../../styles/mixins.css";
+@import "../../styles/breakpoints.css";
+
+.home {
+  padding: 6rem 2rem;
+}
+
+.title {
+  margin-bottom: 4rem;
+
+  span {
+    font-weight: 700;
+  }
+}

@@ -1,7 +1,8 @@
 import Head from "next/head";
-import AboutPage from "@src/components/About/About";
+import AboutPage from "@src/components/AboutPage/AboutPage";
+import Header from "@src/components/Header/Header";
 
-export default function About() {
+const About = () => {
   return (
     <>
       <Head>
@@ -14,8 +15,11 @@ export default function About() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        <Header />
         <AboutPage />
       </main>
     </>
   );
-}
+};
+
+export default About;

@@ -1,7 +1,8 @@
 import Head from "next/head";
-import ContactPage from "@src/components/Contact/Contact";
+import ContactPage from "@src/components/ContactPage/ContactPage";
+import Header from "@src/components/Header/Header";
 
-export default function Contact() {
+const Contact = () => {
   return (
     <>
       <Head>
@@ -14,8 +15,11 @@ export default function Contact() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        <Header />
         <ContactPage />
       </main>
     </>
   );
-}
+};
+
+export default Contact;

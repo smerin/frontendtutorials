@@ -1,0 +1,10 @@
+@import "../../styles/mixins.css";
+@import "../../styles/breakpoints.css";
+
+.post {
+  padding: 6rem 2rem;
+}
+
+.title {
+  margin-bottom: 4rem;
+}
