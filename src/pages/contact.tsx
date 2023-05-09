@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <>
       <Head>
-        <title>Contact | Frontend Tutorials</title>
+        <title>Contact | smerin.io</title>
         <meta
           name="description"
           content="Contact us with any feedback on the tutorials, or to enquire about hiring us for your project."

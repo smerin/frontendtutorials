@@ -11,7 +11,7 @@ const HomePage = ({ posts }: Props): JSX.Element => {
   return (
     <div className={styles.home}>
       <h1 className={styles.title}>
-        Welcome to <span>Frontend</span> Tutorials
+        Welcome to <span>smerin.io</span>
       </h1>
       {posts && (
         <div className={styles.posts}>

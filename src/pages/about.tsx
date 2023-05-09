@@ -6,7 +6,7 @@ const About = () => {
   return (
     <>
       <Head>
-        <title>About | Frontend Tutorials</title>
+        <title>About | smerin.io</title>
         <meta
           name="description"
           content="A showcase of best practices in frontend development, covering topics such as UX, typography, accessibility and animation."

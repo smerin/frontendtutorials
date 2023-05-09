@@ -13,7 +13,7 @@ const Home: NextPage<Props> = ({ posts }) => {
   return (
     <>
       <Head>
-        <title>Frontend Tutorials</title>
+        <title>smerin.io</title>
         <meta
           name="description"
           content="Frontend tips, tricks and tutorials from George Smerin"
