@@ -1,9 +1,9 @@
 import { useState, FormEvent } from "react";
 
-import styles from "./Subscribe.module.css";
+import styles from "./SubscribeForm.module.css";
 import Button, { ButtonStyles } from "../Button/Button";
 
-const Subscribe = () => {
+const SubscribeForm = () => {
   const [email, setEmail] = useState("");
   const [success, setSuccess] = useState(false);
   const [failure, setFailure] = useState(false);
@@ -38,28 +38,31 @@ const Subscribe = () => {
   }
 
   return (
-    <form className={styles.subscribe} onSubmit={subscribeUser}>
-      <label htmlFor="email-input" className={styles.label}>
-        Subscribe to my monthly newsletter for frontend tips and technqiues
-      </label>
-
-      <input
-        className={styles.input}
-        id="email-input"
-        type="email"
-        name="email"
-        value={email}
-        placeholder="Enter your email"
-        required
-        autoCapitalize="off"
-        autoCorrect="off"
-        onChange={(e) => setEmail(e.target.value)}
-      />
-
-      <Button type="submit" buttonStyle={ButtonStyles.TURQUOISE}>
-        Subscribe
-      </Button>
-
+    <>
+      <form className={styles.subscribe} onSubmit={subscribeUser}>
+        <label htmlFor="email-input" className={styles.label}>
+          <span className={styles.labelText}>Sign up now</span>
+          <input
+            className={styles.input}
+            id="email-input"
+            type="email"
+            name="email"
+            value={email}
+            placeholder="Email address"
+            required
+            autoCapitalize="off"
+            autoCorrect="off"
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </label>
+        <Button
+          type="submit"
+          buttonStyle={ButtonStyles.TURQUOISE}
+          className={styles.button}
+        >
+          Subscribe
+        </Button>
+      </form>
       {failure && (
         <p className={styles.failure}>
           There was an error subscribing to the newsletter. Hit me up at{" "}
@@ -67,8 +70,8 @@ const Subscribe = () => {
           the old fashioned way.
         </p>
       )}
-    </form>
+    </>
   );
 };
 
-export default Subscribe;
+export default SubscribeForm;

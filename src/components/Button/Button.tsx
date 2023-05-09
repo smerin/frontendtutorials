@@ -1,10 +1,12 @@
 import { ReactNode } from "react";
+import cx from "classnames";
 
 import styles from "./Button.module.css";
 
 interface ButtonProps {
   type?: "button" | "submit";
   buttonStyle?: ButtonStyles;
+  className: string;
   disabled?: boolean;
   children: ReactNode;
   handleClick?: () => void;
@@ -19,6 +21,7 @@ export enum ButtonStyles {
 const Button = ({
   type = "button",
   buttonStyle = ButtonStyles.WHITE,
+  className,
   disabled,
   children,
   handleClick,
@@ -26,7 +29,7 @@ const Button = ({
   return (
     <button
       type={type}
-      className={styles.button}
+      className={cx(styles.button, className)}
       data-style={buttonStyle}
       disabled={disabled}
       onClick={handleClick}

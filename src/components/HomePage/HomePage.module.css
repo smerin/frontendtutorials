@@ -5,10 +5,24 @@
   padding: 6rem 2rem;
 }
 
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.newsletter {
+  padding: 8rem 0;
+  max-width: 60rem;
+}
+
 .title {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 
   span {
     font-weight: 700;
   }
+}
+
+.message {
+  margin-bottom: 4rem;
 }

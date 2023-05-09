@@ -113,3 +113,9 @@ h5 {
 h6 {
   @mixin headline6;
 }
+
+hr {
+  border: 0;
+  height: 1px;
+  background: var(--slate);
+}
