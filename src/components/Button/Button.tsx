@@ -6,7 +6,7 @@ import styles from "./Button.module.css";
 interface ButtonProps {
   type?: "button" | "submit";
   buttonStyle?: ButtonStyles;
-  className: string;
+  className?: string;
   disabled?: boolean;
   children: ReactNode;
   handleClick?: () => void;

@@ -66,7 +66,7 @@ const SubscribeForm = () => {
       {failure && (
         <p className={styles.failure}>
           There was an error subscribing to the newsletter. Hit me up at{" "}
-          <a href="mailto:mail@smerin.io">mail@smerin.io</a> and I'll add you
+          <a href="mailto:mail@smerin.io">mail@smerin.io</a> and I’ll add you
           the old fashioned way.
         </p>
       )}
