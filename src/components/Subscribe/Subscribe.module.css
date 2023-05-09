@@ -17,3 +17,10 @@
   border-radius: 4rem;
   margin: 0 0 2rem;
 }
+
+.failure {
+  margin: 2rem 0;
+  background-color: var(--cerise);
+  padding: 2rem;
+  max-width: 60rem;
+}

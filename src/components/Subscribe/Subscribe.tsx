@@ -5,6 +5,8 @@ import Button, { ButtonStyles } from "../Button/Button";
 
 const Subscribe = () => {
   const [email, setEmail] = useState("");
+  const [success, setSuccess] = useState(false);
+  const [failure, setFailure] = useState(false);
 
   const subscribeUser = async (e: FormEvent) => {
     e.preventDefault();
@@ -17,8 +19,23 @@ const Subscribe = () => {
         "Content-Type": "application/json",
       },
       method: "POST",
-    });
+    })
+      .then(({ status }) => {
+        if (status >= 400) {
+          return setFailure(true);
+        }
+        setSuccess(true);
+        setFailure(false);
+      })
+      .catch(() => {
+        setFailure(true);
+        setSuccess(false);
+      });
   };
+
+  if (success) {
+    return <p>Success!</p>;
+  }
 
   return (
     <form className={styles.subscribe} onSubmit={subscribeUser}>
@@ -42,6 +59,14 @@ const Subscribe = () => {
       <Button type="submit" buttonStyle={ButtonStyles.TURQUOISE}>
         Subscribe
       </Button>
+
+      {failure && (
+        <p className={styles.failure}>
+          There was an error subscribing to the newsletter. Hit me up at{" "}
+          <a href="mailto:mail@smerin.io">mail@smerin.io</a> and I'll add you
+          the old fashioned way.
+        </p>
+      )}
     </form>
   );
 };

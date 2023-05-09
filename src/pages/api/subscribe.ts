@@ -31,14 +31,11 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     );
 
     if (response.status >= 400) {
-      return res.status(400).json({
-        error:
-          "There was an error subscribing to the newsletter. Hit me up at mail@smerin.io and I'll add you the old fashioned way.",
-      });
+      return res.status(400).json({});
     }
 
-    return res.status(201).json({ error: "" });
+    return res.status(201).json({});
   } catch {
-    return res.status(500);
+    return res.status(500).json({});
   }
 };
