@@ -1,0 +1,19 @@
+@import "../../styles/mixins.css";
+@import "../../styles/breakpoints.css";
+
+.subscribe {
+  border-bottom: 1px solid var(--slate);
+  padding: 0 0 4rem;
+}
+
+.label {
+  display: block;
+  margin: 0 0 1rem;
+}
+
+.input {
+  border: 0;
+  padding: 0.5rem 2rem;
+  border-radius: 4rem;
+  margin: 0 0 2rem;
+}

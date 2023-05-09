@@ -1,5 +1,6 @@
 import { Post } from "@src/types";
 import PostExcerpt from "@src/components/PostExcerpt/PostExcerpt";
+import Subscribe from "@src/components/Subscribe/Subscribe";
 
 import styles from "./HomePage.module.css";
 
@@ -13,6 +14,7 @@ const HomePage = ({ posts }: Props): JSX.Element => {
       <h1 className={styles.title}>
         Welcome to <span>smerin.io</span>
       </h1>
+      <Subscribe />
       {posts && (
         <div className={styles.posts}>
           {posts.map((post) => (
