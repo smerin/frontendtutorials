@@ -1,7 +1,16 @@
+@import "../../styles/mixins.css";
+@import "../../styles/breakpoints.css";
+
 .reference {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 2rem;
+
+  @media (--medium) {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .image {
@@ -16,8 +25,11 @@
 
 .quote {
   p {
-    font-size: 2.4rem;
     margin: 0 0 1rem;
+
+    @media (--large) {
+      font-size: 2.4rem;
+    }
   }
   cite {
     font-weight: 700;
