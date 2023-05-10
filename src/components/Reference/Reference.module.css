@@ -1,0 +1,28 @@
+.reference {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.image {
+  flex: 0 0 12rem;
+  border-radius: 50%;
+  overflow: hidden;
+
+  img {
+    filter: grayscale(1);
+  }
+}
+
+.quote {
+  p {
+    font-size: 2.4rem;
+    margin: 0 0 1rem;
+  }
+  cite {
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+}

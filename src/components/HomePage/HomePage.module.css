@@ -1,12 +1,12 @@
 @import "../../styles/mixins.css";
 @import "../../styles/breakpoints.css";
 
-.home {
-  padding: 6rem 2rem;
+.hero {
 }
 
 .container {
   max-width: 120rem;
+  padding: 0 2rem;
   margin: 0 auto;
 }
 
@@ -25,4 +25,14 @@
 
 .message {
   margin-bottom: 4rem;
+}
+
+.references {
+  padding: 4rem 0;
+  background: var(--offWhite);
+  color: var(--charcoal);
+}
+
+.posts {
+  padding: 4rem 0;
 }
