@@ -6,9 +6,8 @@
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
-  --font-family-default: "Barlow", sans-serif;
-  --font-family-heading: "Big Shoulders Display";
-  --font-family-alt: "Big Shoulders Text";
+  --font-family-default: "Fira Sans", sans-serif;
+  --font-family-heading: "Fira Sans", sans-serif;
 
   --font-size-body: 2rem;
   --line-height-body: 1.5;
@@ -42,6 +41,7 @@ html {
 body {
   background: var(--charcoal);
   color: #fff;
+  font-weight: 300;
   font-family: var(--font-family-default);
   font-size: var(--font-size-body);
   line-height: var(--line-height-body);
@@ -119,4 +119,9 @@ hr {
   border: 0;
   height: 1px;
   background: var(--slate);
+}
+
+b,
+strong {
+  font-weight: 600;
 }

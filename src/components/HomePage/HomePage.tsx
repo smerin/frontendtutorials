@@ -29,9 +29,10 @@ const HomePage = ({ posts }: Props): JSX.Element => {
           </div>
         </div>
       </section>
-      <section className={styles.references}>
+      <div className={styles.references}>
         <div className={styles.container}>
           <Reference
+            className={styles.reference}
             author="James Mahy"
             image="/images/james-mahy.jpg"
             text="George’s expertise in front end development really shines
@@ -39,7 +40,7 @@ const HomePage = ({ posts }: Props): JSX.Element => {
                 constantly wows me with his animations and attention to detail."
           />
         </div>
-      </section>
+      </div>
       <section className={styles.posts}>
         <div className={styles.container}>
           {posts && (

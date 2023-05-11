@@ -24,12 +24,10 @@
 }
 
 .quote {
+  max-width: 60rem;
+
   p {
     margin: 0 0 1rem;
-
-    @media (--large) {
-      font-size: 2.4rem;
-    }
   }
   cite {
     font-weight: 700;

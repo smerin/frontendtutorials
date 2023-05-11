@@ -1,9 +1,6 @@
 @import "../../styles/mixins.css";
 @import "../../styles/breakpoints.css";
 
-.hero {
-}
-
 .container {
   max-width: 120rem;
   padding: 0 2rem;
@@ -31,6 +28,12 @@
   padding: 4rem 0;
   background: var(--offWhite);
   color: var(--charcoal);
+}
+
+.reference {
+  @media (--large) {
+    margin-left: 10rem;
+  }
 }
 
 .posts {

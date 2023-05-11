@@ -3,6 +3,8 @@
 
 .button {
   @mixin smallCaps;
+  font-weight: 500;
+  letter-spacing: 0.1em;
   display: flex;
   align-items: center;
   justify-content: center;
