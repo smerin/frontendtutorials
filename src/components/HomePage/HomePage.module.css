@@ -2,14 +2,13 @@
 @import "../../styles/breakpoints.css";
 
 .container {
-  max-width: 120rem;
+  max-width: 76rem;
   padding: 0 2rem;
   margin: 0 auto;
 }
 
 .newsletter {
-  padding: 8rem 0;
-  max-width: 60rem;
+  padding: 12rem 0;
 }
 
 .title {
@@ -28,12 +27,6 @@
   padding: 4rem 0;
   background: var(--offWhite);
   color: var(--charcoal);
-}
-
-.reference {
-  @media (--large) {
-    margin-left: 10rem;
-  }
 }
 
 .posts {
