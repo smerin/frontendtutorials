@@ -1,6 +1,6 @@
 ---
 date: "2023-05-02"
-title: "Supercharge your frontend development skillset"
+title: "Supercharge your frontend skillset"
 excerpt: "This site will bring you plenty of the freshest tips and tricks from the world of frontend development. Have a look at what is coming soon."
 meta_description: "The freshest tips and tricks from the world of frontend development. Have a look at what is coming soon."
 tags: []

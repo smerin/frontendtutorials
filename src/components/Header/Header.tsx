@@ -6,7 +6,7 @@ const Header = (): JSX.Element => {
   return (
     <header className={styles.header}>
       <Link href="/">
-        <div className={styles.logo}>smerin.io</div>
+        <div className={styles.logo}>George Smerin</div>
       </Link>
       <nav className={styles.nav}>
         <ul>

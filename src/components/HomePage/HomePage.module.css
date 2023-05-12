@@ -29,6 +29,29 @@
   color: var(--charcoal);
 }
 
+.about {
+  padding: 8rem 0;
+  background: var(--turquoise);
+  color: var(--charcoal);
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+}
+
 .posts {
-  padding: 4rem 0;
+  padding: 8rem 0;
+}
+
+.postsHeader {
+  @media (--medium) {
+    text-align: center;
+  }
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+}
+
+.postExcerpts {
 }

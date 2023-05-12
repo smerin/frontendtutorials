@@ -34,17 +34,33 @@ const HomePage = ({ posts }: Props): JSX.Element => {
           <Reference
             className={styles.reference}
             author="James Mahy"
-            image="/images/james-mahy.jpg"
             text="George’s expertise in front end development really shines
                 through. He is a master of CSS, Javascript and React and
                 constantly wows me with his animations and attention to detail."
           />
         </div>
       </div>
+      <div className={styles.about}>
+        <div className={styles.container}>
+          <h2>About me</h2>
+          <p>
+            I’ve been a website and app developer for over 15 years, working for
+            a wide range of clients including Warner Bros, NatWest, Accenture
+            and The Royal Navy. My passion for design and animation is always at
+            the heart of my work. I started this website and newsletter to
+            showcase my work and also help other frontend developers add a
+            little creative flair to their toolkit.
+          </p>
+        </div>
+      </div>
       <section className={styles.posts}>
         <div className={styles.container}>
+          <div className={styles.postsHeader}>
+            <h2>The Art of Frontend Development</h2>
+            <p>A monthly newsletter by George Smerin</p>
+          </div>
           {posts && (
-            <div className={styles.posts}>
+            <div className={styles.postExcerpts}>
               {posts.map((post) => (
                 <PostExcerpt key={post.slug} post={post} />
               ))}
