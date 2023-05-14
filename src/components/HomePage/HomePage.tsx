@@ -5,6 +5,7 @@ import SubscribeForm from "@src/components/SubscribeForm/SubscribeForm";
 import Reference from "@src/components/Reference/Reference";
 
 import styles from "./HomePage.module.css";
+import { ButtonStyles } from "../Button/Button";
 
 interface Props {
   posts: Post[];
@@ -66,6 +67,16 @@ const HomePage = ({ posts }: Props): JSX.Element => {
               ))}
             </div>
           )}
+        </div>
+      </section>
+      <section className={styles.signup}>
+        <div className={styles.container}>
+          <h2>A monthly newsletter to help you on your development journey</h2>
+          <p>
+            Subscribe to The Art of Frontend Development and get regular
+            actionable tips on becoming a more creative frontend developer.
+          </p>
+          <SubscribeForm buttonStyle={ButtonStyles.CHARCOAL} />
         </div>
       </section>
     </div>

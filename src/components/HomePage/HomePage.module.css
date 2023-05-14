@@ -44,6 +44,8 @@
 }
 
 .postsHeader {
+  margin-bottom: 6rem;
+
   @media (--medium) {
     text-align: center;
   }
@@ -53,5 +55,12 @@
   }
 }
 
-.postExcerpts {
+.signup {
+  padding: 12rem 0;
+  background: var(--apple);
+  color: var(--charcoal);
+
+  p {
+    margin-bottom: 4rem;
+  }
 }

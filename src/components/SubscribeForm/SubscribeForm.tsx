@@ -3,7 +3,11 @@ import { useState, FormEvent } from "react";
 import styles from "./SubscribeForm.module.css";
 import Button, { ButtonStyles } from "../Button/Button";
 
-const SubscribeForm = () => {
+interface SubscribeFormProps {
+  buttonStyle?: ButtonStyles;
+}
+
+const SubscribeForm = ({ buttonStyle }: SubscribeFormProps) => {
   const [email, setEmail] = useState("");
   const [success, setSuccess] = useState(false);
   const [failure, setFailure] = useState(false);
@@ -57,7 +61,7 @@ const SubscribeForm = () => {
         </label>
         <Button
           type="submit"
-          buttonStyle={ButtonStyles.TURQUOISE}
+          buttonStyle={buttonStyle || ButtonStyles.TURQUOISE}
           className={styles.button}
         >
           Subscribe

@@ -1,11 +1,6 @@
 @import "../../styles/mixins.css";
 @import "../../styles/breakpoints.css";
 
-.postExcerpt {
-  border-bottom: 1px solid var(--slate);
-  padding: 4rem 0;
-}
-
 .title {
   margin: 0 0 2rem;
 }
