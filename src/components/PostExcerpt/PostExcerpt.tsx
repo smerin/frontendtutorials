@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Post } from "@src/types";
+import { formatDate } from "@src/utils";
 
 import styles from "./PostExcerpt.module.css";
 
@@ -10,6 +11,7 @@ interface Props {
 const PostExcerpt = ({ post }: Props): JSX.Element => {
   return (
     <article className={styles.postExcerpt}>
+      <div className={styles.meta}>{formatDate(post.date)}</div>
       <h2 className={styles.title}>
         <Link href={`/posts/${post.slug}`}>{post.title}</Link>
       </h2>

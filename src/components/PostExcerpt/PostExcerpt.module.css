@@ -1,6 +1,10 @@
 @import "../../styles/mixins.css";
 @import "../../styles/breakpoints.css";
 
+.meta {
+  margin: 0 0 1rem;
+}
+
 .title {
   margin: 0 0 2rem;
 }
