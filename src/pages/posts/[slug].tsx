@@ -4,6 +4,7 @@ import { getAllPosts, getPostBySlug, markdownToHtml } from "@src/services";
 import { Post } from "@src/types";
 import Header from "@src/components/Header/Header";
 import PostPage from "@src/components/PostPage/PostPage";
+import PostHeader from "@src/components/PostHeader/PostHeader";
 
 interface Props {
   post: Post;
@@ -19,6 +20,7 @@ const SinglePost: NextPage<Props> = ({ post }) => {
       </Head>
       <main>
         <Header />
+        <PostHeader categories={["css", "react", "animation", "javascript"]} />
         <PostPage post={post} />
       </main>
     </>

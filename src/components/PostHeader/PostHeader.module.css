@@ -1,0 +1,43 @@
+@import "../../styles/mixins.css";
+@import "../../styles/breakpoints.css";
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+  padding: 4rem 2rem;
+  border-bottom: 1px solid var(--slate);
+}
+
+.title {
+  @mixin headline2;
+  margin: 0;
+}
+
+.categories {
+  .toggle {
+    @media (--medium) {
+      display: none;
+    }
+  }
+
+  ul {
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap;
+
+    @media (--medium) {
+      display: flex;
+      gap: 2rem;
+    }
+  }
+
+  li {
+    @mixin smallCaps;
+  }
+}
