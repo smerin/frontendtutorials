@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "classnames": "^2",
+    "fathom-client": "^3.6.0",
     "fs": "^0.0.1-security",
     "gray-matter": "^4",
     "next": "14.1.0",
