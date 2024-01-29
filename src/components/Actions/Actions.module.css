@@ -1,0 +1,21 @@
+@import "../../styles/mixins.css";
+@import "../../styles/breakpoints.css";
+
+.actions {
+  padding: 4rem 0 2rem;
+}
+
+.actionList {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  flex-direction: column;
+
+  @media (--medium) {
+    flex-direction: row;
+    gap: 4rem;
+  }
+}

@@ -1,7 +1,9 @@
+"use client";
+
 import { useState, FormEvent } from "react";
+import Button, { ButtonStyles } from "../../Button/Button";
 
 import styles from "./SubscribeForm.module.css";
-import Button, { ButtonStyles } from "../Button/Button";
 
 interface SubscribeFormProps {
   buttonStyle?: ButtonStyles;

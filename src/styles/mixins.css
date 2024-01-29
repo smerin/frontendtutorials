@@ -57,7 +57,7 @@
 
 @define-mixin smallCaps {
   font-family: var(--font-family-heading);
-  font-weight: 300;
+  font-weight: 600;
   font-size: 1.8rem;
   line-height: 1.33;
   letter-spacing: 0.15em;

@@ -1,66 +1,78 @@
 @import "../../styles/mixins.css";
 @import "../../styles/breakpoints.css";
 
-.container {
-  max-width: 76rem;
-  padding: 0 2rem;
+.home {
   margin: 0 auto;
+
+  @media (--large) {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100vh;
+  }
 }
 
-.newsletter {
-  padding: 12rem 0;
+.image {
+  @media (--large) {
+    flex: 0 0 50%;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.content {
+  flex: 0 0 50%;
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+
+  @media (--medium) {
+    padding: 4rem;
+  }
+}
+
+.contentInner {
+  margin: 0 auto;
+  text-align: center;
 }
 
 .title {
+  font-size: 4rem;
+  font-weight: 700;
   margin-bottom: 2rem;
 
-  span {
-    font-weight: 700;
+  @media (--medium) {
+    font-size: 6rem;
+    margin-bottom: 4rem;
   }
 }
 
-.message {
+.subtitle {
+  @mixin smallCaps;
   margin-bottom: 4rem;
-}
-
-.references {
-  padding: 4rem 0;
-  background: var(--offWhite);
-  color: var(--charcoal);
-}
-
-.about {
-  padding: 8rem 0;
-  background: var(--turquoise);
-  color: var(--charcoal);
-
-  h2 {
-    margin-bottom: 2rem;
-  }
-}
-
-.posts {
-  padding: 8rem 0;
-}
-
-.postsHeader {
-  margin-bottom: 6rem;
 
   @media (--medium) {
-    text-align: center;
-  }
-
-  h2 {
-    margin-bottom: 2rem;
+    font-size: 2rem;
   }
 }
 
-.signup {
-  padding: 12rem 0;
-  background: var(--apple);
-  color: var(--charcoal);
+.intro {
+  max-width: 80rem;
+  margin-bottom: 0;
+  padding: 4rem 2rem;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  font-size: 2rem;
 
-  p {
-    margin-bottom: 4rem;
+  @media (--medium) {
+    padding: 6rem 2rem;
+    font-size: 2.4rem;
   }
 }

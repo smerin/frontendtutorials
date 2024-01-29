@@ -39,8 +39,8 @@ html {
 }
 
 body {
-  background: var(--charcoal);
-  color: #fff;
+  background: var(--white);
+  color: var(--charcoal);
   font-weight: 300;
   font-family: var(--font-family-default);
   font-size: var(--font-size-body);

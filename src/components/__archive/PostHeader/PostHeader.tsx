@@ -1,7 +1,7 @@
 import { Post } from "@src/types";
 
 import styles from "./PostHeader.module.css";
-import Button from "../Button/Button";
+import Button from "../../Button/Button";
 
 interface Props {
   categories: string[];
