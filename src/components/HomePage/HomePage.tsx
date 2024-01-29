@@ -10,8 +10,10 @@ const HomePage = () => {
       </div>
       <div className={styles.content}>
         <div className={styles.contentInner}>
-          <h1 className={styles.title}>George Smerin</h1>
-          <h2 className={styles.subtitle}>Creative Frontend Developer</h2>
+          <div className={styles.titles}>
+            <h1 className={styles.title}>George Smerin</h1>
+            <h2 className={styles.subtitle}>Creative Frontend Developer</h2>
+          </div>
           <p className={styles.intro}>
             I help frontend developers get better at design, UX and animation so
             that they can stand out and land their first job or promotion.

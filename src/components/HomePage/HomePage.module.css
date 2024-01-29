@@ -43,6 +43,10 @@
   text-align: center;
 }
 
+.titles {
+  padding: 0 2rem;
+}
+
 .title {
   font-size: 4rem;
   font-weight: 700;
