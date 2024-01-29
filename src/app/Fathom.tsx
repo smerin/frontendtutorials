@@ -11,7 +11,7 @@ function TrackPageView() {
   // Load the Fathom script on mount
   useEffect(() => {
     load("JYHPYCXQ", {
-      includedDomains: ["smerin.io"],
+      includedDomains: ["www.smerin.io"],
       auto: false,
     });
   }, []);
