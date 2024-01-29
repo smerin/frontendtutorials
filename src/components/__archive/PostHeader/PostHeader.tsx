@@ -15,7 +15,7 @@ const PostHeader = ({ categories }: Props): JSX.Element => {
         <Button className={styles.toggle}>Categories</Button>
         <ul className={styles.categories}>
           {categories.map((category) => (
-            <li>{category}</li>
+            <li key={category}>{category}</li>
           ))}
         </ul>
       </div>
