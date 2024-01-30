@@ -13,15 +13,12 @@ const Actions = () => {
       <ul className={styles.actionList}>
         <li>
           <Link href="https://www.linkedin.com/in/smerin/">
-            <Button buttonStyle={ButtonStyles.TURQUOISE}>LinkedIn</Button>
+            <Button buttonStyle={ButtonStyles.WHITE}>LinkedIn</Button>
           </Link>
         </li>
         <li>
           <Link href="mailto:mail@smerin.io">
-            <Button
-              buttonStyle={ButtonStyles.TURQUOISE}
-              handleClick={openContact}
-            >
+            <Button buttonStyle={ButtonStyles.WHITE} handleClick={openContact}>
               Email me
             </Button>
           </Link>

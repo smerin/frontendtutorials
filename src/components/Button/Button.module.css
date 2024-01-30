@@ -2,7 +2,7 @@
 @import "../../styles/breakpoints.css";
 
 .button {
-  @mixin smallCaps;
+  font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,8 +29,9 @@
     }
 
     &:hover {
-      background: var(--turquoise);
-      border-color: var(--turquoise);
+      background: var(--charcoal);
+      border-color: var(--charcoal);
+      color: var(--white);
     }
   }
 

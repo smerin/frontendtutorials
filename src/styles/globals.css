@@ -6,9 +6,6 @@
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
-  --font-family-default: "Fira Sans", sans-serif;
-  --font-family-heading: "Fira Sans", sans-serif;
-
   --font-size-body: 2rem;
   --line-height-body: 1.5;
 
@@ -42,7 +39,7 @@ body {
   background: var(--white);
   color: var(--charcoal);
   font-weight: 300;
-  font-family: var(--font-family-default);
+  font-family: var(--font-family-body);
   font-size: var(--font-size-body);
   line-height: var(--line-height-body);
   -webkit-font-smoothing: antialiased;

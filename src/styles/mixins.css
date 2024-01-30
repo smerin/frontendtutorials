@@ -1,68 +1,119 @@
+@import "./breakpoints.css";
+
 @define-mixin headline1 {
   font-family: var(--font-family-heading);
-  font-size: 4.8rem;
-  font-weight: 600;
+  font-size: 3.2rem;
+  font-weight: 900;
   line-height: 1;
   margin-bottom: 2rem;
+  text-transform: uppercase;
 
   @media (--medium) {
-    font-size: 6.4rem;
+    font-size: 4.8rem;
+  }
+
+  @media (--large) {
+    font-size: 6rem;
   }
 }
 
 @define-mixin headline2 {
   font-family: var(--font-family-heading);
-  font-size: 3.6rem;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 900;
   line-height: 1;
   margin-bottom: 2rem;
+  text-transform: uppercase;
 
   @media (--medium) {
-    font-size: 4.8rem;
+    font-size: 2rem;
+  }
+
+  @media (--large) {
+    font-size: 2rem;
   }
 }
 
 @define-mixin headline3 {
   font-family: var(--font-family-heading);
-  font-size: 2.4rem;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 900;
   line-height: 1;
   margin-bottom: 2rem;
+  text-transform: uppercase;
 
   @media (--medium) {
-    font-size: 3.6rem;
+    font-size: 2rem;
+  }
+
+  @media (--large) {
+    font-size: 2rem;
   }
 }
 
 @define-mixin headline4 {
   font-family: var(--font-family-heading);
-  font-size: 2.4rem;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 900;
   line-height: 1;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+
+  @media (--medium) {
+    font-size: 2rem;
+  }
+
+  @media (--large) {
+    font-size: 2rem;
+  }
 }
 
 @define-mixin headline5 {
   font-family: var(--font-family-heading);
-  font-size: 1.8rem;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 900;
   line-height: 1;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+
+  @media (--medium) {
+    font-size: 2rem;
+  }
+
+  @media (--large) {
+    font-size: 2rem;
+  }
 }
 
 @define-mixin headline6 {
   font-family: var(--font-family-heading);
-  font-size: 1.8rem;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 900;
   line-height: 1;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+
+  @media (--medium) {
+    font-size: 2rem;
+  }
+
+  @media (--large) {
+    font-size: 2rem;
+  }
 }
 
 @define-mixin smallCaps {
   font-family: var(--font-family-heading);
   font-weight: 600;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   line-height: 1.33;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
+
+  @media (--medium) {
+    font-size: 2rem;
+  }
 }
 
 @define-mixin visuallyHidden {

@@ -18,4 +18,8 @@
     flex-direction: row;
     gap: 4rem;
   }
+
+  button {
+    min-width: 18rem;
+  }
 }

@@ -32,6 +32,8 @@
   display: flex;
   align-items: center;
   padding: 4rem 0;
+  background: linear-gradient(101deg, #06c5ae -16.24%, #00a6cc 114.59%), #00a6cc;
+  color: var(--white);
 
   @media (--medium) {
     padding: 4rem;
@@ -48,13 +50,10 @@
 }
 
 .title {
-  font-size: 4rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 
-  @media (--medium) {
-    font-size: 6rem;
-    margin-bottom: 4rem;
+  @media (--large) {
+    margin-bottom: 2rem;
   }
 }
 
@@ -62,8 +61,8 @@
   @mixin smallCaps;
   margin-bottom: 4rem;
 
-  @media (--medium) {
-    font-size: 2rem;
+  @media (--large) {
+    font-size: 2.4rem;
   }
 }
 
@@ -71,8 +70,8 @@
   max-width: 80rem;
   margin-bottom: 0;
   padding: 4rem 2rem;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
+  border-top: 1px solid rgb(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgb(255, 255, 255, 0.2);
   font-size: 2rem;
 
   @media (--medium) {
