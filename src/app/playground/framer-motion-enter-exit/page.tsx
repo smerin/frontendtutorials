@@ -6,11 +6,11 @@ import Button, { ButtonStyles } from "@src/components/Button/Button";
 import styles from "./style.module.css";
 
 const FramerMotionEnterExit = () => {
-  const [showMessage, setShowMessage] = useState(false);
+  const [showMessage, setShowMessage] = useState(true);
 
   return (
     <>
-      <section className={styles.section} data-color="pink">
+      <section className={styles.section}>
         <AnimatePresence>
           {showMessage && (
             <motion.div
@@ -23,6 +23,7 @@ const FramerMotionEnterExit = () => {
             </motion.div>
           )}
         </AnimatePresence>
+
         <Button
           className={styles.toggle}
           buttonStyle={ButtonStyles.WHITE}
