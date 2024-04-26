@@ -1,0 +1,23 @@
+.section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--turquoise);
+  color: var(--white);
+
+  h1 {
+    background: var(--charcoal);
+    padding: 2rem 4rem;
+  }
+
+  button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 12rem;
+    text-transform: uppercase;
+  }
+}
