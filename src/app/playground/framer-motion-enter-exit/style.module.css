@@ -1,3 +1,5 @@
+@import "../../../styles/mixins.css";
+
 .section {
   position: relative;
   display: flex;
@@ -7,17 +9,19 @@
   height: 100vh;
   background: var(--turquoise);
   color: var(--white);
+}
 
-  h1 {
-    background: var(--charcoal);
-    padding: 2rem 4rem;
-  }
+.message {
+  background: var(--charcoal);
+  padding: 2rem 4rem;
+  @mixin headline1;
+}
 
-  button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    min-width: 12rem;
-    text-transform: uppercase;
-  }
+.toggle {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 12rem;
+  text-transform: uppercase;
 }

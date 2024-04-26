@@ -6,27 +6,29 @@ import Button, { ButtonStyles } from "@src/components/Button/Button";
 import styles from "./style.module.css";
 
 const FramerMotionEnterExit = () => {
-  const [showTitle, setShowTitle] = useState(false);
+  const [showMessage, setShowMessage] = useState(false);
 
   return (
     <>
       <section className={styles.section} data-color="pink">
         <AnimatePresence>
-          {showTitle && (
+          {showMessage && (
             <motion.div
               animate={{ scale: 1, opacity: 1 }}
               initial={{ scale: 0, opacity: 0 }}
               exit={{ scale: 0, opacity: 0 }}
+              className={styles.message}
             >
-              <h1>🔥 Framer Motion 🔥</h1>
+              🔥 Framer Motion 🔥
             </motion.div>
           )}
         </AnimatePresence>
         <Button
+          className={styles.toggle}
           buttonStyle={ButtonStyles.WHITE}
-          handleClick={() => setShowTitle(!showTitle)}
+          handleClick={() => setShowMessage(!showMessage)}
         >
-          {showTitle ? "Hide" : "Show"}
+          {showMessage ? "Hide" : "Show"}
         </Button>
       </section>
     </>
