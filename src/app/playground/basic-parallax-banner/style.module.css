@@ -1,0 +1,55 @@
+.section {
+  position: relative;
+  height: 100dvh;
+  background: var(--charcoal);
+  color: var(--white);
+  overflow: hidden;
+
+  &[data-color="pink"] {
+    background: var(--pink);
+  }
+  &[data-color="pacific"] {
+    background: var(--pacific);
+  }
+  &[data-color="yellow"] {
+    background: var(--yellow);
+  }
+  &[data-color="apple"] {
+    background: var(--apple);
+  }
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  z-index: 1;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 140dvh;
+}
+
+.imageBanner {
+  height: 50rem;
+  background: var(--charcoal);
+  overflow: hidden;
+}
+
+/* .title {
+  transform: translateX(20rem);
+} */
+
+.coverImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
