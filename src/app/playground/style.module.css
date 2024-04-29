@@ -1,0 +1,24 @@
+.playground {
+  height: 100dvh;
+  background: var(--pacific);
+  color: var(--white);
+  text-align: center;
+  padding: 8rem 2rem;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+
+  li {
+    padding: 1rem 0;
+
+    a {
+      font-weight: 600;
+    }
+  }
+}
+
+.heading {
+  margin-bottom: 4rem;
+}

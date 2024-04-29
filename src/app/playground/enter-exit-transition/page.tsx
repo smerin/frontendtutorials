@@ -5,7 +5,7 @@ import Button, { ButtonStyles } from "@src/components/Button/Button";
 
 import styles from "./style.module.css";
 
-const FramerMotionEnterExit = () => {
+const EnterExitTransition = () => {
   const [showMessage, setShowMessage] = useState(true);
 
   return (
@@ -36,4 +36,4 @@ const FramerMotionEnterExit = () => {
   );
 };
 
-export default FramerMotionEnterExit;
+export default EnterExitTransition;
