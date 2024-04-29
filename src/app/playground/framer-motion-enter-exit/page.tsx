@@ -13,14 +13,14 @@ const FramerMotionEnterExit = () => {
       <section className={styles.section}>
         <AnimatePresence>
           {showMessage && (
-            <motion.div
+            <motion.p
               animate={{ scale: 1, opacity: 1 }}
               initial={{ scale: 0, opacity: 0 }}
               exit={{ scale: 0, opacity: 0 }}
               className={styles.message}
             >
               🔥 Framer Motion 🔥
-            </motion.div>
+            </motion.p>
           )}
         </AnimatePresence>
 

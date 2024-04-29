@@ -6,15 +6,23 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100dvh;
   background: var(--turquoise);
   color: var(--white);
 }
 
 .message {
   background: var(--charcoal);
-  padding: 2rem 4rem;
-  @mixin headline1;
+  padding: 2rem;
+  @mixin headline2;
+  text-align: center;
+
+  @media (--medium) {
+    @mixin headline1;
+  }
+  @media (--large) {
+    padding: 2rem 4rem;
+  }
 }
 
 .toggle {
