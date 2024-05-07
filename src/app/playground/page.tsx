@@ -12,6 +12,9 @@ const Playground = () => {
           </Link>
         </li>
         <li>
+          <Link href="/playground/parallax-hero">Parallax Hero</Link>
+        </li>
+        <li>
           <Link href="/playground/enter-exit-transition">
             Enter & Exit Transitions
           </Link>
