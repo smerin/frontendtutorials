@@ -18,7 +18,7 @@ const BasicParallaxBanner = () => {
     <>
       <section className={styles.section} data-color="pacific">
         <div className={styles.content}>
-          <h1>↓ Parallax Banner ↓</h1>
+          <h2 className={styles.title}>Scroll</h2>
         </div>
       </section>
       <section ref={bannerRef} className={styles.section} data-color="charcoal">
@@ -29,17 +29,17 @@ const BasicParallaxBanner = () => {
           />
         </motion.div>
         <div className={styles.content}>
-          <h1>Parallax Banner</h1>
+          <h1 className={styles.title}>Parallax Banner</h1>
         </div>
       </section>
       <section className={styles.section} data-color="yellow">
         <div className={styles.content}>
-          <h1>↑ Parallax Banner ↑</h1>
+          <h2 className={styles.title}>Scroll up</h2>
         </div>
       </section>
       <section className={styles.section} data-color="apple">
         <div className={styles.content}>
-          <h1>↑ Parallax Banner ↑</h1>
+          <h2 className={styles.title}>Scroll up</h2>
         </div>
       </section>
     </>
